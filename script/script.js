@@ -4,7 +4,9 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 // Dichiarazione delle variabili, sia per la parola inserita che per la verifica effettuata dalla funzione "palindroma".
-let parola = prompt("inserisce una parola per capire s'è palindroma o no ");
+let parola = prompt(
+  "inserisce una parola per capire s'è palindroma o no "
+).toLowerCase;
 let verificazione = palindroma(parola);
 console.log(verificazione);
 /**
