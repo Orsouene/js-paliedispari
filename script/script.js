@@ -6,7 +6,7 @@
 // Dichiarazione delle variabili, sia per la parola inserita che per la verifica effettuata dalla funzione "palindroma".
 let parola = prompt(
   "inserisce una parola per capire s'è palindroma o no "
-).toLowerCase;
+).toLowerCase();
 let verificazione = palindroma(parola);
 console.log(verificazione);
 /**
@@ -14,6 +14,7 @@ console.log(verificazione);
  * @param {string} parola  "la parola inserita"
  * @returns {string} "Messaggio dopo il controllo fatto sulla parola"
  */
+
 function palindroma(parola) {
   // Dichiarare 'reverseParola' e convertirla in un array, poi puoi riconvertirla in una stringa."
   let reverseParola = parola.split("").reverse().join("");
@@ -24,6 +25,7 @@ function palindroma(parola) {
   if (parola === reverseParola) {
     return "la parola" + " : " + parola + " è palindroma";
   }
+
   //   la parola invertita non è uguale a quella inserita
   else return "la parola" + " : " + parola + " non è palindroma";
 }
